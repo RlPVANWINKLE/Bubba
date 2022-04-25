@@ -30,7 +30,7 @@
       <h1 class=" display-cust py-3 amber">About Bubba's Painting</h1>
       <div class="d-flex grey mb-3 under ">
         <v-img src="../images/KYLE.jpg" class="caros"></v-img>
-        <p class="text-center pt-5 text-- ">Bubba's painting has been in business for 22 years as of March of 2022. We have been throughout some small cities in the united states. Our most recent city was in a small city of Florida. We have since moved to the State of Utah and have been painting homes throughout the northern quarter of the state. The founder was a man by the name of Steve Hulshen. Steve has since passed and it was passed to his son, the current owner Kyle. Kyle has succesfully ran the business for the last 12 years, and has been paintinghome since the age of 8. While this wasnt what he imagined his future being, he happy to have this as his life and foreseable future.  </p>
+        <p class="text-center pt-5 text-- ">Bubba's painting has been in business for 22 years as of March of 2022. We have been throughout some small cities in the united states. Our most recent city was in a small city of Florida. We have since moved to the State of Utah and have been painting homes throughout the northern quarter of the state. The founder was a man by the name of Steve Hulshen. Steve has since passed and the company passed to his son, Kyle. Kyle has succesfully ran the business for the last 12 years, and has been painting homes since the age of 8. While this wasnt what he imagined his future being, he is happy to have this as his life and foreseable future.  </p>
       </div>
       
     </v-container>
