@@ -1,5 +1,5 @@
 <template>
-    <v-form class="grey darken-4 ">
+    <v-form class="grey darken-4 " ref="form">
         <v-container>
             <v-card class="mx-auto my-16 py-10 myclass">
                 <h1 class="text-center text-decoration-underline">How Can We Help You?</h1>
@@ -52,6 +52,11 @@
                     ></v-textarea>
                 </v-col>
             </v-row>
+            <v-row align="center" justify="center" @click="submit(firstname)">
+                <v-btn color="#FFC107">
+                    Submit
+                </v-btn>
+            </v-row>
             </v-card>
         </v-container>
         <v-container>
@@ -71,8 +76,7 @@
                     <v-card-subtitle class="text-center text---" >MON-FRI: 8:00AM - 6:00PM</v-card-subtitle>
                     <v-card-subtitle class="text-center text---" >SAT & SUN: Closed</v-card-subtitle>
                 </v-col>
-             </v-row>
-             
+             </v-row>            
             </v-card>
         </v-container>
     </v-form>
@@ -96,7 +100,15 @@ export default {
             textRules:[
                 v => v.length <= 250 || 'Please keep under 250 characters'
             ],
+            phone: '',
+            comments: ''
             
+        }
+    },
+    methods:{
+        submit(firstname){
+            alert('Thank-you ' + firstname.toUpperCase() + '. We will get back to you within 24 business hours!')
+            this.$refs.form.reset();
         }
     }
 }

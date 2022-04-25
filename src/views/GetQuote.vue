@@ -1,5 +1,5 @@
 <template>
-    <v-form  v-model="valid" class="grey darken-4 ">
+    <v-form  v-model="valid" class="grey darken-4 " ref="form">
     <v-container fluid class=" font-weight-bold mx-auto ">
         <v-card  class="mx-auto my-16 py-10 myclass"  >
             <h1 class="text-center text-decoration-underline">About You</h1>
@@ -126,7 +126,7 @@
             </v-col>
             </v-row>
             <v-row align="center" justify="center">
-                <v-col cols="10" md="8">
+                <v-col cols="10" md="9">
                     <v-textarea
                         v-model="comments"
                         :rules="textRules"
@@ -136,7 +136,11 @@
                     ></v-textarea>
                 </v-col>
             </v-row>
-    
+            <v-row align="center" justify="center" @click="submit(firstname)">
+                <v-btn color="#FFC107">
+                    Submit
+                </v-btn>
+            </v-row>    
         </v-card>
     </v-container>
   </v-form>
@@ -172,6 +176,12 @@ import items from '../components/states.js'
             greatrooms: '1',
             bedheight: '8ft',
             comments: ''
+        }
+    },
+    methods:{
+        submit(firstname){
+            alert('Thank-you ' + firstname.toUpperCase() + '. We will get back to you within 48 business hours!')
+            this.$refs.form.reset();
         }
     }
   }
